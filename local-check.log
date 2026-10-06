@@ -1,0 +1,26 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-05T19:48:17.518-03:00  INFO 1400 --- [account-service] [           main] c.d.b.bff.AccountServiceApplication      : Starting AccountServiceApplication v0.0.1-SNAPSHOT using Java 25.0.4 with PID 1400 (C:\Users\exequ\Documents\Duoc\backend3\s8\proyecto8\account-service\target\account-service-0.0.1-SNAPSHOT.jar started by exequ in C:\Users\exequ\Documents\Duoc\backend3\s8\proyecto8\account-service)
+2026-10-05T19:48:17.523-03:00  INFO 1400 --- [account-service] [           main] c.d.b.bff.AccountServiceApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T19:48:18.577-03:00  INFO 1400 --- [account-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-10-05T19:48:18.633-03:00  INFO 1400 --- [account-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JDBC repository interfaces.
+2026-10-05T19:48:19.285-03:00  INFO 1400 --- [account-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 18090 (http)
+2026-10-05T19:48:19.308-03:00  INFO 1400 --- [account-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T19:48:19.309-03:00  INFO 1400 --- [account-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-05T19:48:19.353-03:00  INFO 1400 --- [account-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1742 ms
+2026-10-05T19:48:19.537-03:00  INFO 1400 --- [account-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T19:48:20.076-03:00  INFO 1400 --- [account-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5700c9db
+2026-10-05T19:48:20.080-03:00  INFO 1400 --- [account-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T19:48:21.189-03:00  INFO 1400 --- [account-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 18090 (http) with context path '/'
+2026-10-05T19:48:21.204-03:00  INFO 1400 --- [account-service] [           main] c.d.b.bff.AccountServiceApplication      : Started AccountServiceApplication in 4.352 seconds (process running for 5.098)
+2026-10-05T19:48:49.179-03:00  INFO 1400 --- [account-service] [.1-18090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-05T19:48:49.179-03:00  INFO 1400 --- [account-service] [.1-18090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-05T19:48:49.181-03:00  INFO 1400 --- [account-service] [.1-18090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms

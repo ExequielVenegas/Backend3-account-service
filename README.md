@@ -8,7 +8,6 @@ servicios excluidos por indicación del profesor.
 ## Uso dentro del flujo
 
 Batch carga MySQL → Account consulta los datos → el BFF adapta la respuesta.
-En el futuro consumirá comandos desde Kafka; ese consumidor aún no existe.
 
 | Endpoint GET interno | Uso |
 |---|---|

@@ -18,13 +18,20 @@ public class GlobalExceptionHandler {
 
     private static final Logger log = LoggerFactory.getLogger(GlobalExceptionHandler.class);
 
+    @ExceptionHandler(org.springframework.web.server.ResponseStatusException.class)
+    ResponseEntity<ApiError> handleDomain(org.springframework.web.server.ResponseStatusException exception, HttpServletRequest request) {
+        return response(HttpStatus.valueOf(exception.getStatusCode().value()), exception.getReason(), request);
+    }
+
     @ExceptionHandler(ResourceNotFoundException.class)
     ResponseEntity<ApiError> handleNotFound(ResourceNotFoundException exception, HttpServletRequest request) {
         return response(HttpStatus.NOT_FOUND, exception.getMessage(), request);
     }
 
     @ExceptionHandler({MethodArgumentNotValidException.class, MethodArgumentTypeMismatchException.class,
-            ConstraintViolationException.class, IllegalArgumentException.class})
+            ConstraintViolationException.class, IllegalArgumentException.class,
+            org.springframework.web.bind.MissingRequestHeaderException.class,
+            org.springframework.http.converter.HttpMessageNotReadableException.class})
     ResponseEntity<ApiError> handleBadRequest(Exception exception, HttpServletRequest request) {
         return response(HttpStatus.BAD_REQUEST, "Parámetro o solicitud inválida", request);
     }
